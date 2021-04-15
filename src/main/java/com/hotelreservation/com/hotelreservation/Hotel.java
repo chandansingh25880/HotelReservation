@@ -1,4 +1,4 @@
-package com.hotelreservation.com.hotelreservation;
+package com.hotelreservation.com.hotelreservation ;
 
 public class Hotel {
     public  String name;
