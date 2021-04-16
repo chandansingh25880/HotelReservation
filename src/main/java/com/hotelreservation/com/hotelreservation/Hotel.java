@@ -1,12 +1,12 @@
 package com.hotelreservation.com.hotelreservation ;
 
 public class Hotel {
-    private  String hotelName;
+    private String hotelName;
     private double weekday;
     private double Weekend;
-
-    public  String name;
-    public  Double rates;
+    public String name;
+    public Double rates;
+    public int rating;
 
     public Hotel() {
         this.name = name;
@@ -22,13 +22,24 @@ public class Hotel {
     public String getName() {
         return name;
     }
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
-    public Double getRate(){
+
+    public Double getRate() {
         return rates;
     }
-    public void setRate(double rates){
+
+    public void setRate(double rates) {
         this.rates = rates;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }

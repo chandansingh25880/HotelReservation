@@ -12,6 +12,8 @@ import java.util.List;
 public class HotelReservationTest {
 
     HotelReservation hotelReservation = new HotelReservation();
+    private Object lakewood;
+    private int rating;
 
     @Test
     public void givenHotelWhenAddedShouldReturnTrue() {
@@ -49,5 +51,14 @@ public class HotelReservationTest {
                 HotelReservation.addHotelRates("Bridgewood", 150.00, 50.00) &&
                 HotelReservation.addHotelRates("Ridgewood", 220.00, 150.00);
         Assertions.assertTrue(result);
+    }
+ @Test
+ public void givenHotelWhenInvokedAddRatingShouldBeAbleToAdd() {
+     Assertions.assertEquals(3, lakewood(3));
+     
+  }
+
+    private int lakewood(int i) {
+        return this.rating;
     }
 }
