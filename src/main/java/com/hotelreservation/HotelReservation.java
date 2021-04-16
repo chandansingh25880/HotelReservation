@@ -27,8 +27,7 @@ public class HotelReservation {
 
     }
 
-    /* @Description- To find the cheapest rates for the hotel. */
-
+    /* @Description- to find the cheapest rates for the hotel. */
     public String findCheapestHotel(Date[] dates) {
         ArrayList<Double> cheapRateHotels = new ArrayList<>();
         for (Hotel hotel : hotelList) {
@@ -44,5 +43,10 @@ public class HotelReservation {
 
     }
 
+    /* @Description- added weekday and weekend rates for every hotel.*/
+    public static boolean addHotelRates(String hotelName, double weekday, double weekend) {
+        Hotel hotel = new Hotel();
+       boolean isAdded = List.add(hotel);
+        return isAdded();
+    }
 }
-

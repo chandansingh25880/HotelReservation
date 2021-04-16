@@ -1,6 +1,10 @@
 package com.hotelreservation.com.hotelreservation ;
 
 public class Hotel {
+    private  String hotelName;
+    private double weekday;
+    private double Weekend;
+
     public  String name;
     public  Double rates;
 
@@ -8,6 +12,13 @@ public class Hotel {
         this.name = name;
         this.rates = rates;
     }
+
+    public Hotel(String hotelName, double weekday, double weekend) {
+        this.hotelName = hotelName;
+        this.weekday = weekday;
+        this.Weekend = weekend;
+    }
+
     public String getName() {
         return name;
     }
