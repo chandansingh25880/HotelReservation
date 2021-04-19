@@ -70,6 +70,12 @@ public class HotelReservation {
         return results;
 
     }
+
+    @Test
+    public void givenWeekdayAndWeekend_whenCostForEach_shouldBeAddedToWeekdayAndWeekend() {
+        Assertions.assertEquals(100, this.HotelReservation.costReward(ridgewood));
+
+    }
 }
 
 

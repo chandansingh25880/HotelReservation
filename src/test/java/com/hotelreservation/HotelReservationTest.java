@@ -55,11 +55,11 @@ public class HotelReservationTest {
         Assertions.assertTrue(result);
     }
 
-  @Test
-  public void givenHotelWhenInvokedAddRatingShouldBeAbleToAdd() {
-     Assertions.assertEquals(3, lakewood(3));
+    @Test
+    public void givenHotelWhenInvokedAddRatingShouldBeAbleToAdd() {
+        Assertions.assertEquals(3, lakewood(3));
 
-  }
+    }
 
     @Test
     public void givenDateRange_whenSearched_shouldReturnCheapestHotelBasedOnWeekdayAndWeekend() {
@@ -89,3 +89,13 @@ public class HotelReservationTest {
         Assertions.assertEquals(5, BestRatedHotelResult.get(0).getRating());
         Assertions.assertEquals("Ridgewood", BestRatedHotelResult.get(0).getName());
         Assertions.assertEquals(370, BestRatedHotelResult.get(0).getRate());
+
+    }
+
+
+    @Test
+    public void givenWeekdayAndWeekend_whenCostForEach_shouldBeAddedToWeekdayAndWeekend() {
+        Assertions.assertEquals(100, this.HotelReservation.costReward(ridgewood));
+
+    }
+}
