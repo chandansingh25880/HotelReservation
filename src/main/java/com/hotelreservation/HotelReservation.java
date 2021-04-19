@@ -71,11 +71,14 @@ public class HotelReservation {
 
     }
 
-    @Test
-    public void givenWeekdayAndWeekend_whenCostForEach_shouldBeAddedToWeekdayAndWeekend() {
-        Assertions.assertEquals(100, this.HotelReservation.costReward(ridgewood));
-
-    }
+  public int costReward(Hotel hotel) {
+		LocalDate todayDate = LocalDate.now();
+		if (todayDate.getDayOfWeek().equals(DayOfWeek.SATURDAY) || todayDate.getDayOfWeek().equals(DayOfWeek.SUNDAY))
+			return Hotel.rate.get(CustomerType.REWARD).getWeekendRates();
+		else
+			return Hotel.rate.get(CustomerType.REWARD).getWeekdayRates();
+      
+	}
 }
 
 
