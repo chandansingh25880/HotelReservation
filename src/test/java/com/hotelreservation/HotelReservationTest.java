@@ -89,3 +89,6 @@ public class HotelReservationTest {
         Assertions.assertEquals(5, BestRatedHotelResult.get(0).getRating());
         Assertions.assertEquals("Ridgewood", BestRatedHotelResult.get(0).getName());
         Assertions.assertEquals(370, BestRatedHotelResult.get(0).getRate());
+        
+    }
+}
