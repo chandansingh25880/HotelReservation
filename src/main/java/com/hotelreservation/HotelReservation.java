@@ -15,7 +15,7 @@ public class HotelReservation {
     }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to the hotel Reservatiomn System");
+        System.out.println("Welcome to the hotel Reservation System");
         HotelReservation hotelReservation = new HotelReservation();
         hotelReservation.addHotel();
     }
